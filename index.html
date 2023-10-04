@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Assignment 1 Portfolio W4 CSS</title>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            body{
+                background-color: rgb(65, 160, 244);
+            }
+
+            img{
+                float: left;
+                padding: 20px;
+                width: 25%;
+            }
+
+            .section1 {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+                width: 100%;
+                float: left;
+            }
+
+            .section1m {
+                background-color: rgb(247, 246, 246);
+                padding: 15px;
+                width: 100%;
+                float: left;
+            }
+
+            .section2 {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+                max-height: 650px;
+                display: grid;
+                place-items: center;
+                gap: 0rem;
+                grid-template-columns: repeat(auto-fit, minmax(min(10rem, 100%), 1fr));
+;
+            }
+
+            .section2a {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .section2b {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .section2c {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .section2d {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .section2e {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .section2f {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .section2g {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .section2h {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .section3 {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="section1">
+            <img src="HCI_Assignment_1-Web_portfolio_images/a1906503-b15a-413d-a504-3f0638f169e3.jpg" title="Angelo Cascino's photo profile">
+            <h1>Angelo Cascino</h1>
+            <h3>  Student ID: 2702400400 - L1CC </h3>
+            <a href="https://www.whatsapp.com"> <img src="HCI_Assignment_1-Web_portfolio_images/WhatsAppLogoS.png"> </a>
+        </div>
+        <div class="section1m">
+            <h2 style="text-align: center;"> Portfolio</h2>
+        </div>
+        <div class="section2">
+            <div class="section2a">
+                <h4 style="text-align: center;">Major</h4>
+                <p style="text-align: center"> Computer Science</p>
+            </div>
+            <div class="section2b">
+                <h4 style="text-align: center;">Programming Skills</h4>
+                <p style="text-align: center"> Java & Python</p>
+            </div>
+            <div class="section2c">
+                <h4 style="text-align: center;">Hobby</h4>
+                <p style="text-align: center"> Sleeping</p>
+            </div>
+            <div class="section2d">
+                <h4 style="text-align: center;">Interest</h4>
+                <p style="text-align: center"> Exploring</p>
+            </div>
+            <div class="section2e">
+                <h4 style="text-align: center;">Elementary School</h4>
+                <p style="text-align: center"> Enrico Solito</p>
+            </div>
+            <div class="section2f">
+                <h4 style="text-align: center;">Middle School</h4>
+                <p style="text-align: center"> Ettore Romagnoli - Music</p>
+            </div>
+            <div class="section2g">
+                <h4 style="text-align: center;">High School</h4>
+                <p style="text-align: center"> ITC Luigi Sturzo - BIS</p>
+            </div>
+            <div class="section2h">
+                <h4 style="text-align: center;">Favourite</h4>
+                <p style="text-align: center"> Chocolate</p>
+            </div>
+        </div>
+        <div class="section3">
+            <h2 style="text-align: center;"> Brief description of himself</h2>
+            <p> I am a simple Computer Science student. I like computers... </p>
+        </div>
+    </body>
+</html>
